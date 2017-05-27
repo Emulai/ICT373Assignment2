@@ -8,7 +8,7 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.Path;
 /**
  *
  * @author jaknd
@@ -21,10 +21,10 @@ public class ReadFromFile {
         
     }
     
-    public void OpenFile(String p_fileName) throws IOException
+    public void OpenFile(Path p_fileName) throws IOException
     {
         input = new ObjectInputStream(
-            Files.newInputStream(Paths.get(p_fileName)));
+            Files.newInputStream(p_fileName));
     }
     
     public FamilyTree ReadRecord() throws EOFException, 

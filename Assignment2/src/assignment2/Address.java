@@ -71,7 +71,7 @@ public class Address implements Serializable {
     @Override
     public String toString()
     {
-        String l_string = "Address: " + m_streetNumber + " " +
+        String l_string = "\nAddress: " + m_streetNumber + " " +
                           m_streetName + " " + m_suburb +
                           " " + m_postCode;
         return l_string;

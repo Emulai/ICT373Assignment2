@@ -25,29 +25,19 @@ public class FamilyTree implements Serializable {
         return l_person;
     }
     
-    public void SetMother(Person p_person, Person p_mother) throws IndexOutOfBoundsException
+    public void AddPerson(Person p_person)
     {
-        m_familyMembers.get(m_familyMembers.indexOf(p_person)).SetMother(p_mother);
+        m_familyMembers.add(p_person);
     }
     
-    public void SetFather(Person p_person, Person p_father) throws IndexOutOfBoundsException
+    public ArrayList<Person> GetPeople()
     {
-        m_familyMembers.get(m_familyMembers.indexOf(p_person)).SetMother(p_father);
+        return m_familyMembers;
     }
     
-    public void AddSpouse(Person p_person, Person p_spouse) throws IndexOutOfBoundsException
+    public Person GetPerson(Person p_person)
     {
-        m_familyMembers.get(m_familyMembers.indexOf(p_person)).AddSpouse(p_spouse);
-    }
-    
-    public void AddChild(Person p_person, Person p_child) throws IndexOutOfBoundsException
-    {
-        m_familyMembers.get(m_familyMembers.indexOf(p_person)).AddChild(p_child);
-    }
-    
-    public void AddGrandChild(Person p_person, Person p_gChild) throws IndexOutOfBoundsException
-    {
-        m_familyMembers.get(m_familyMembers.indexOf(p_person)).AddGrandChild(p_gChild);
+        return m_familyMembers.get(m_familyMembers.indexOf(p_person));
     }
     
     @Override

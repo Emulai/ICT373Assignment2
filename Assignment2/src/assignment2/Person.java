@@ -16,6 +16,7 @@ public class Person implements Serializable {
     private String m_maritalName;
     private String m_gender;
     private String m_description;
+    private String m_role;
     private Person m_mother;
     private Person m_father;
     private ArrayList<Person> m_spouse = new ArrayList();
@@ -25,16 +26,16 @@ public class Person implements Serializable {
     
     public Person()
     {
-        this("", "", "", "", "",null, null, null, null, null, null);
+        this("", "", "", "", "", "",null, null, null, null, null, null);
     }
     
     public Person (String name)
     {
-        this(name, "", "", "", "", null, null, null, null, null, null);
+        this(name, "", "", "", "", "", null, null, null, null, null, null);
     }
     
-    public Person(String p_fName, String p_lName,
-                  String p_mName, String p_gender, String p_description,
+    public Person(String p_fName, String p_lName, String p_mName, 
+                  String p_gender, String p_description, String p_role,
                   Person p_mother, Person p_father,
                   Person p_spouse, Person p_child, 
                   Person p_grandChild, Address p_address)
@@ -44,6 +45,7 @@ public class Person implements Serializable {
         this.m_maritalName = p_mName;
         this.m_gender = p_gender;
         this.m_description = p_description;
+        this.m_role = p_role;
         this.m_mother = p_mother;
         this.m_father = p_father;
         this.m_spouse.add(p_spouse);
@@ -75,6 +77,11 @@ public class Person implements Serializable {
     public void SetDescription(String p_description)
     {
         this.m_description = p_description;
+    }
+    
+    public void SetRole(String p_role)
+    {
+        this.m_role = p_role;
     }
     
     public void SetMother(Person p_mother)
@@ -132,6 +139,11 @@ public class Person implements Serializable {
         return this.m_description;
     }
     
+    public String GetRole()
+    {
+        return this.m_role;
+    }
+    
     public Person GetMother()
     {
         return this.m_mother;
@@ -165,34 +177,57 @@ public class Person implements Serializable {
     @Override
     public String toString()
     {
-        String l_string = m_firstName + " " + m_lastName + " " + m_maritalName + " " +
-                          m_gender + " " + m_description + "\n" +
-                          "Mother: " + m_mother.GetFirstName() + 
-                          " Father: " + m_father.GetFirstName() + "\n";
+        String l_string = "Name: " + m_firstName;
+        if (!"".equals(m_maritalName))
+            l_string += " " + m_maritalName + "\nMaiden Name: " + m_lastName;
+        else
+            l_string += " " + m_lastName;
+        l_string += "\nGender: " + m_gender;
+        if (m_mother != null)
+            l_string += "\nMother: " + m_mother.GetFirstName() + " " + m_mother.GetMaritalName();
+        else
+            l_string += "\nMother: Unknown";
+        if (m_father != null)
+            l_string += "\nFather: " + m_father.GetFirstName() + " " + m_father.GetLastName();
+        else
+            l_string += "\nFather: Unknown";
         
         for (Person spouse : m_spouse)
         {
             if (spouse != null)
-                l_string += "Spouse: " + spouse.GetFirstName() + " ";
+            {
+                l_string += "\nSpouse: " + spouse.GetFirstName() + " ";
+                if (!"".equals(spouse.GetMaritalName()))
+                    l_string += spouse.GetMaritalName();
+                else
+                    l_string += spouse.GetLastName();
+            }
         }
-        
-        l_string += "\n";
         
         for (Person child : m_child)
         {
             if (child != null)
-                l_string += "Child: " + child.GetFirstName() + " ";
+            {
+                l_string += "\nChild: " + child.GetFirstName() + " ";
+                if (!"".equals(child.GetMaritalName()))
+                    l_string += child.GetMaritalName();
+                else
+                    l_string += child.GetLastName();
+            }
         }
-        
-        l_string += "\n";
         
         for (Person gChild : m_grandChild)
         {
             if (gChild != null)
-                l_string += "GrandChild: " + gChild.GetFirstName() + " ";
+            {
+                l_string += "\nGrandChild: " + gChild.GetFirstName() + " ";
+                if (!"".equals(gChild.GetMaritalName()))
+                    l_string += gChild.GetMaritalName();
+                else
+                    l_string += gChild.GetLastName();
+            }
         }
         
-        l_string += "\n";
         l_string += m_address;
         
         return l_string;

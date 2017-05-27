@@ -1,0 +1,135 @@
+Bob Holt    Sarah Smith Holt            Marshall Jones   Fiona Doe Jones            GrandParent
+
+Jack Holt    John Holt                  Mary Jones Holt      Jacob Jones            Parent
+
+          Raymond Holt    Sue Holt Grey     Jerry Holt      <Killian Grey>          Child
+
+                                  Robert Grey     Jessica Grey                      GrandChild
+
+<--Descriptions-->
+Bob Holt -- Retired case worker.
+Sarah Smith Holt -- Owned Smiths Chips for 3 decades
+Marshall Jones -- Killed his uncle
+Finoa Doe Jones -- Leader of organised crime
+Jack Holt -- Once ate 200 dollars
+John Holt -- Dropped contact with his brother after he ate 200 dollars
+Mary Jones Holt -- Used car saleswoman
+Jacob Jones -- Owns 20 cats
+Raymond Holt -- Captain of a police precinct
+Sue Holt Grey -- Really likes mandarins
+Jerry Holt -- Inherited a love for crime
+Killian Grey -- Orphan, grew up on the streets
+Robert Grey -- Recently said "Dada"
+Jessica Grey -- Attends the third grade
+
+<--Mothers-->
+Bob Holt -- null
+Sarah Smith Holt -- null
+Marshall Jones -- null
+Fiona Doe Jones -- null
+Jack Holt -- Sarah Smith Holt
+John Holt -- Sarah Smith Holt
+Mary Jones Holt -- Fiona Doe Holt
+Jacob Jones -- Fiona Doe Holt
+Raymond Holt -- Mary Jones Holt
+Sue Holt Grey -- Mary Jones Holt
+Jerry Holt -- Mary Jones Holt
+Killian Grey -- null
+Robert Grey -- Sue Holt Grey
+Jessica Grey -- Sue Holt Grey
+
+<--Fathers-->
+Bob Holt -- null
+Sarah Smith Holt -- null
+Marshall Jones -- null
+Fiona Doe Jones -- null
+Jack Holt -- Bob Holt
+John Holt -- Bob Holt
+Mary Jones Holt -- Marshall Jones
+Jacob Jones -- Marshall Jones
+Raymond Holt -- John Holt
+Sue Holt Grey -- John Holt
+Jerry Holt -- John Holt
+Killian Grey -- null
+Robert Grey -- Killian Grey
+Jessica Grey -- Killian Grey
+
+<--Spouse-->
+Bob Holt -- Sarah Smith Holt
+Sarah Smith Holt -- Bob Holt
+Marshall Jones -- Fiona Doe Jones
+Fiona Doe Jones -- Marshall Jones
+Jack Holt -- null
+John Holt -- Mary Jones Holt
+Mary Jones Holt -- John Holt
+Jacob Jones -- null
+Raymond Holt -- null
+Sue Holt Grey -- Killian Grey
+Jerry Holt -- null
+Killian Grey -- Sue Holt Grey
+Robert Grey -- null
+Jessica Grey -- null
+
+<--Children-->
+Bob Holt -- Jack Holt, John Holt
+Sarah Smith Holt -- Jack Holt, John Holt
+Marshall Jones -- Mary Jones Holt, Jacob Jones
+Fiona Doe Jones -- Mary Jones Holt, Jacob Jones
+Jack Holt -- null
+John Holt -- Raymond Holt, Sue Holt Grey, Jerry Holt
+Mary Jones Holt -- Raymond Holt, Sue Holt Grey, Jerry Holt
+Jacob Jones -- null
+Raymond Holt -- null
+Sue Holt Grey -- Robert Grey, Jessica Grey
+Jerry Holt -- null
+Killian Grey -- Robert Grey, Jessica Grey
+Robert Grey -- null
+Jessica Grey -- null
+
+<--GrandChildren-->
+Bob Holt -- Raymond Holt, Sue Holt Grey, Jerry Holt
+Sarah Smith Holt -- Raymond Holt, Sue Holt Grey, Jerry Holt
+Marshall Jones -- Raymond Holt, Sue Holt Grey, Jerry Holt
+Fiona Doe Jones -- Raymond Holt, Sue Holt Grey, Jerry Holt
+Jack Holt -- null
+John Holt -- Robert Grey, Jessica Grey
+Mary Jones Holt -- Robert Grey, Jessica Grey
+Jacob Jones -- null
+Raymond Holt -- null
+Sue Holt Grey -- null
+Jerry Holt -- null
+Killian Grey -- null
+Robert Grey -- null
+Jessica Grey -- null
+
+<--Address-->
+Bob Holt -- 70 Apple Way Pembrooke 6273
+Sarah Smith Holt -- 70 Apple Way Pembrooke 6273
+Marshall Jones -- 23 Flag Lane Rockingham 6997
+Fiona Doe Jones -- 23 Flag Lane Rockingham 6997
+Jack Holt -- 87 Elm Street Northbridge 6666
+John Holt -- 188 Strange Way Canning Vale 6155
+Mary Jones Holt -- 188 Strange Way Canning Vale 6155
+Jacob Jones -- 91 Blue Walk Subiaco 6236
+Raymond Holt -- 1 Avenue Boulevard Armadale 6543
+Sue Holt Grey -- 9 Serious Loop Scarborough Beach 6775
+Jerry Holt -- 90 South Street Murdoch 6150
+Killian Grey -- 9 Serious Loop Scarborough Beach 6775
+Robert Grey -- 9 Serious Loop Scarborough Beach 6775
+Jessica Grey -- 9 Serious Loop Scarborough Beach 6775
+
+<--Role-->
+Bob Holt -- GrandParent
+Sarah Smith Holt -- GrandParent
+Marshall Jones -- GrandParent
+Fiona Doe Jones -- GrandParent
+Jack Holt -- Parent
+John Holt -- Parent
+Mary Jones Holt -- Parent
+Jacob Jones -- Parent
+Raymond Holt -- Child
+Sue Holt Grey -- Child
+Jerry Holt -- Child
+Killian Grey -- Child
+Robert Grey -- GrandChild
+Jessica Grey -- GrandChild
