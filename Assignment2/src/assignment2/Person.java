@@ -52,6 +52,31 @@ public class Person implements Serializable {
         this.m_address = p_address;
     }
     
+    public void SetFirstName(String p_name)
+    {
+        this.m_firstName = p_name;
+    }
+    
+    public void SetLastName(String p_name)
+    {
+        this.m_lastName = p_name;
+    }
+    
+    public void SetMaritalName(String p_name)
+    {
+        this.m_maritalName = p_name;
+    }
+    
+    public void SetGender(String p_gender)
+    {
+        this.m_gender = p_gender;
+    }
+    
+    public void SetDescription(String p_description)
+    {
+        this.m_description = p_description;
+    }
+    
     public void SetMother(Person p_mother)
     {
         this.m_mother = p_mother;
@@ -147,21 +172,24 @@ public class Person implements Serializable {
         
         for (Person spouse : m_spouse)
         {
-            l_string += "Spouse: " + spouse.GetFirstName() + " ";
+            if (spouse != null)
+                l_string += "Spouse: " + spouse.GetFirstName() + " ";
         }
         
         l_string += "\n";
         
         for (Person child : m_child)
         {
-            l_string += "Child: " + child.GetFirstName() + " ";
+            if (child != null)
+                l_string += "Child: " + child.GetFirstName() + " ";
         }
         
         l_string += "\n";
         
         for (Person gChild : m_grandChild)
         {
-            l_string += "GrandChild: " + gChild.GetFirstName() + " ";
+            if (gChild != null)
+                l_string += "GrandChild: " + gChild.GetFirstName() + " ";
         }
         
         l_string += "\n";
