@@ -1,0 +1,14 @@
+Add New Family Member
+--->Add Mother/Father
+  ->Add Spouse
+  --->Add Second Spouse
+  ->Add Child
+  --->Add Second Child
+  ->Add GrandChild
+  --->Add Second GrandChild
+  
+Edit Existing Family Member
+--->Alter Mother/Father
+  ->Alter Spouses
+  ->Alter Children
+  ->Alter GrandChildren
